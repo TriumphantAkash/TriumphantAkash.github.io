@@ -68,9 +68,15 @@ mark {
   color: #000;
   background: #ff0;
 }
+
 small {
   font-size: 80%;
 }
+
+medium {
+  font-size: 90%;
+}
+
 sub,
 sup {
   position: relative;
