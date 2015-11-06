@@ -34,14 +34,24 @@
 
 		<script>
 		  function initialize() {
+			var myLatLng = {lat: 32.9866293, lng: -96.7488478};
 			var mapCanvas = document.getElementById('contact');
 			var mapOptions = {
-			  center: new google.maps.LatLng(44.5403, -78.5463),
-			  zoom: 8,
+			  center: new google.maps.LatLng(32.9866293,-96.7488478),
+			  zoom: 12,
 			  mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
 			var map = new google.maps.Map(mapCanvas, mapOptions);
+			
+			var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: 'I am here!'
+			});
+
+			
 		  }
+		  
 		  google.maps.event.addDomListener(window, 'load', initialize);
 
 	</script>
